@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <title>Form, Nav and Layouting</title>
+    <link rel="stylesheet" href="public/css/contact.css" />
+    <link rel="stylesheet" href="public/css/navbar.css" />
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><img src="public/assets/DumbWays logo.png" alt="" /></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/myproject">Add My Project</a></li>
+            <li style="width: 50%; justify-content: flex-end;"></li>
+            <a href="/contactme">
+                <button class="btn-contactme">Contact Me</button>
+            </a>
+            </div>
+    </nav>
+    <div style="padding: 50px 0; display: flex; justify-content: center;">
+        <div style="display: flex; justify-content: center; margin-top: 20px; width: 100%;">
+            <form class="set-form">
+                <h1 class="set-title">GET IN TOUCH</h1>
+                <div>
+                    <label>
+                        <h2 class="set-label">Name</h2>
+                    </label>
+                    <input type="text" class="text-input" id="name" />
+                </div>
+                <div>
+                    <label>
+                        <h2 class="set-label">Email</h2>
+                    </label>
+                    <input type="text" class="text-input" id="email" />
+                </div>
+                <div>
+                    <label>
+                        <h2 class="set-label">Phone Number<h2>
+                    </label>
+                    <input type="number" class="text-input" id="phone" />
+                </div>
+                <div>
+                    <label>
+                        <h2 class="set-label">Subject</h2>
+                    </label>
+                    <select class="text-input" id="subject">
+                        <option disabled selected value></option>
+                        <option>Frontend</option>
+                        <option>Backend</option>
+                        <option>Fullstack</option>
+                    </select>
+                </div>
+                <div>
+                    <label>
+                        <h2 class="set-label">Your Message</h2>
+                    </label>
+                    <textarea class="message-input" id="message"></textarea>
+                </div>
+                <div style="display: flex; justify-content: flex-end; width: 100%">
+                    <button type="button" class="btn-submit" onclick="submitData()">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/contact.js"></script>
+</body>
+
+</html>

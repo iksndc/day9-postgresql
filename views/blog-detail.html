@@ -1,0 +1,97 @@
+<html>
+
+<head>
+  <title>Routing Main</title>
+  <link rel="stylesheet" href="/public/css/blog-detail.css" />
+  <link rel="stylesheet" href="/public/css/navbar.css" />
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><img src="/public/assets/DumbWays logo.png" alt="" /></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/myproject">Add My Project</a></li>
+      <li style="width: 50%; justify-content: flex-end;"></li>
+      <a href="/contactme">
+        <button class="btn-contactme">Contact Me</button>
+      </a>
+      </div>
+  </nav>
+
+  <!-- Blog -->
+  <div class="blog-detail">
+    <div class="blog-detail-container">
+      <h1>{{.Title}}</h1>
+      <div style="display: flex; flex-direction:row;">
+        <div style="width: 60%;">
+          <img style="width: 100%;" src="/public/image/blog-img-detail.png" alt="detail" />
+        </div>
+        <div style="width: 40%;">
+          <div style="display: flex; flex-direction:column; margin-left: 100px;">
+
+            <div style="margin-bottom: 50px;">
+              <h4 style="font-weight:400; margin-top: 0; margin-bottom: 20px; font-size: xx-large;">Duration</h4>
+              <div style="display: flex; flex-direction: row; margin-bottom: 15px;">
+                <div>
+                  <img style="width: 40px;" src="/public/assets/calendar.png" alt="" />
+                </div>
+                <div style="margin: 5px 20px; color: gray; font-size: 18pt;"> 12 Jan 2021 - 11 Feb 2021 </div>
+              </div>
+
+              <div style="display: flex; flex-direction: row; margin-bottom: 15px;">
+                <div>
+                  <img style="width: 40px;" src="/public/assets/time.png" alt="" />
+                </div>
+                <div style="margin: 5px 20px; color: gray; font-size: 18pt;"> 1 month
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h4 style="font-weight:400; margin-top: 20px; margin-bottom: 20px; font-size: xx-large;">Technologies
+              </h4>
+              <div>
+                <div style="display: flex; flex-direction:row;">
+                  <div style="display: flex; flex-direction: row; margin-bottom: 15px;">
+                    <div>
+                      <img style="width: 40px;" src="/public/assets/Reactjs.png" alt="" />
+                    </div>
+                    <div style="margin: 5px 20px; color: gray; font-size: 18pt;"> React js </div>
+                  </div>
+                  <div style="display: flex; flex-direction: row; margin-bottom: 15px; justify-content: flex-end;">
+                    <div>
+                      <img style="width: 40px;" src="/public/assets/js.png" alt="" />
+                    </div>
+                    <div style="margin: 5px 20px; color: gray; font-size: 18pt"> JavaScript </div>
+                  </div>
+                </div>
+
+                <div style="display: flex; flex-direction:row;">
+                  <div style="display: flex; flex-direction: row; margin-bottom: 15px;">
+                    <div>
+                      <img style="width: 40px;" src="/public/assets/nodejs.png" alt="" />
+                    </div>
+                    <div style="margin: 5px 20px; color: gray; font-size: 18pt;"> Node js </div>
+                  </div>
+                  <div style="display: flex; flex-direction: row; margin-bottom: 15px; justify-content: flex-end;">
+                    <div>
+                      <img style="width: 40px;" src="/public/assets/Socket-io.png" alt="" />
+                    </div>
+                    <div style="margin: 5px 20px; color: gray; font-size: 18pt;"> Socket IO </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <p>
+        {{.Content}}
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
